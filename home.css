@@ -1,0 +1,680 @@
+.nav-active a{
+    color: #ffcccb   !important;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Josefin Sans','Nunito',sans-serif;
+}
+
+.top{
+    background: url('Images/home.png') no-repeat center center scroll;
+    background-size: cover;
+    height: 90vh;
+    /*margin-top: 190px;*/
+}
+
+.top-text{
+    margin-top: 7%;
+    margin-left: 5%;
+    text-align: left;
+}
+ 
+.top-text h3{
+    margin: 0%;
+    font-size: 30px;
+    color:rgb(58, 54, 54);
+    word-spacing: 3px;
+}
+
+.top-text h1{
+    margin: 30px 0%;
+    font-size: 45px;
+    color: #d22828;
+    cursor: pointer;
+    word-spacing: 8px;
+}
+
+.top-text p{
+    margin: 0%;
+    font-size: 18px;
+    color: rgb(58, 54, 54);
+    line-height: 25px;
+}
+
+.top-span{
+    font-weight: bold;
+}
+
+.top-btn{
+    margin-top: 4%;
+    display: inline-block;
+    background-color: #d22828;
+    color:white;
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    box-shadow: rgb(117, 115, 115) 2px 2px 4px;
+}
+
+.top-text a:hover{
+    background-color: black;
+}
+
+.option{
+    background-color: #E0DEDE;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 50px;
+    margin-bottom: 5%;
+}
+
+.opt-div{
+    width: 20%;
+}
+
+.opt-div img{
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+} 
+
+.opt-div p{
+    text-transform: capitalize;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+.opt-span{
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.arrival-h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    z-index: -1;
+}
+
+.arrival-h2 h2::after{
+    content: "";
+    display: block;
+    width: 6%;
+    height: 3px;
+    position: absolute;
+    background: #d22828;
+    left: 47%;
+    right: 47%;
+    bottom: 10px;
+}
+
+.arrival-tabs {
+    text-align: center;
+    margin: 3% 0%;
+}
+
+.arrival-tabs input{
+    display: none;
+}
+
+.tab-links {
+    display: flex;
+    width: 60%;
+    margin: 0% 20%;
+    justify-content: center;
+}
+
+.tab-link {
+    display: inline-block;
+    margin: 2% 3%;
+    background-color: #ffffff;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 14px;
+    box-shadow: rgb(91, 90, 90) 2px 5px 6px;
+}
+
+.tab-link:hover {
+    background-color: #d22828;
+    color: white;
+    cursor: pointer;
+}
+
+#tab1:checked ~ .tab-links label[for="tab1"],
+#tab2:checked ~ .tab-links label[for="tab2"],
+#tab3:checked ~ .tab-links label[for="tab3"],
+#tab4:checked ~ .tab-links label[for="tab4"],
+#tab5:checked ~ .tab-links label[for="tab5"]{
+    background-color: #d22828;
+    color: #ffffff;
+}
+
+.tab-content {
+    margin-top: 35px;
+    background: #ffffff;
+    position: relative;
+    height: 190vh; /* Prevents layout shifts */
+}
+  
+.tab-pane {
+    display: none;
+    position: absolute;
+}
+
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3,
+#tab4:checked ~ .tab-content #content4,
+#tab5:checked ~ .tab-content #content5 {
+    display: block;
+}
+
+.tab-books{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tab-book-link{
+    margin-bottom: 5%;
+}
+
+.pane-pic{
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pane-pic img{
+    height:70vh;
+    width: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tab-book:hover img{
+    transform: scale(1.05);
+    opacity:80%;
+}
+
+.pane-pic-badge{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    padding: 2%;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #d22828;
+}
+
+.pane-pic-icon1{
+    position: absolute;
+    top: 120px;
+    left: 230px;
+    padding: 2%;
+    opacity: 0;
+    visibility: hidden;
+    transform:translateX(100px);
+}
+
+.pane-pic-icon1 i{
+    color: white;
+    background-color: #d22828;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.tab-book:hover .pane-pic-icon1{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out,opacity 0.3s ease-in-out;
+}
+
+.pane-pic-icon1 i:hover{
+    background-color: #000000;
+}
+
+.pane-pic-icon2{
+    position: absolute;
+    top: 180px;
+    left: 230px;
+    padding: 2%;
+    opacity: 0;
+    visibility: hidden;
+    transform:translateX(100px);
+}
+
+.pane-pic-icon2 i{
+    color: white;
+    background-color: #d22828;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.tab-book:hover .pane-pic-icon2{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.7s ease-in-out,opacity 0.3s ease-in-out;
+}
+
+.pane-pic-icon2 i:hover{
+    background-color: #000000;
+}
+
+.pane-pic-icon3{
+    position: absolute;
+    top: 240px;
+    left: 230px;
+    padding: 2%;
+    opacity: 0;
+    visibility: hidden;
+    transform:translateX(100px);
+}
+
+.pane-pic-icon3 i{
+    color: white;
+    background-color: #d22828;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.tab-book:hover .pane-pic-icon3{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0);
+    transition: transform 0.9s ease-in-out,opacity 0.3s ease-in-out;
+}
+
+.pane-pic-icon3 i:hover{
+    background-color: #000000;
+}
+
+.pane-content{
+    text-decoration: none;
+    margin-top: 8%;
+}
+
+.pane-content h6{
+    margin: 0%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #767575;
+}
+
+.pane-content h4{
+    margin-top: 5%;
+    margin-bottom:5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.pane-content p{
+    margin: 0%;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #767575;
+}
+
+.pane-content span{
+    font-size: 15px;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+
+.tab-book:hover .pane-content h4{
+    color: #d22828;
+}
+
+@media screen and (max-width:780px) {
+    .tab-book{
+        width:45%;
+    }
+}
+@media screen and (max-width:480px) {
+    .tab-book{
+        width:100%;
+    }
+}
+
+.book-fest{
+    background: url(Images/bg-img-1.jpg) fixed no-repeat center;
+    background-size: cover;
+    margin: 4% 0%;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.book-fest-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 8% 0 2%;
+}
+
+.book-fest-text h2{
+    font-size: 37px;
+    font-weight:200;
+    margin-bottom: 0%;
+}
+
+.book-fest-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #d22828;
+    margin:30px 0;
+}
+
+.book-fest-text p{
+    margin-top: 0%;
+    font-size: 22px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    word-spacing: 2px;
+}
+
+.book-fest-text a{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    background-color: #d22828;
+    color:white;
+    margin-left: 550px;
+    margin-top: 1%;
+    width: 100px;
+    padding: 15px 30px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    box-shadow: rgb(117, 115, 115) 2px 2px 4px;
+}
+
+.book-fest-text a:hover{
+    background-color: black;
+}
+
+.arrival-h2-2{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    margin: 3% 0%;
+}
+
+.arrival-h2-2 h2::after{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    position: absolute;
+    background: #d22828;
+    left: 40%;
+    right: 40%;
+    bottom: 10px;
+}
+
+.best-author{
+    display: flex;
+    margin: 1% 10% 10%;
+}
+
+.best-author-pic{
+    padding-right: 5%;
+}
+
+.best-author-pic img{
+    width: 300px;
+    box-shadow: #767575 5px 10px 25px;
+    cursor: pointer;
+}
+
+.best-author-text{
+    margin: 0% 2%;
+}
+
+.best-author-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.best-author-text-span{
+    color: #5a5959;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.best-author-text p{
+    text-align: justify;
+    line-height: 150%;
+}
+
+.best-author-text h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+.author-awards{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offers{
+    background: url(Images/bg-img-2.jpg) scroll no-repeat center;
+    background-size: cover;
+    margin: 4% 0%;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.offers-text{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin: 3% 2% 5% 37%;
+    width: 50%;
+}
+
+.offers-text h4{
+    font-size: 37px;
+    font-weight:200;
+    margin-bottom: 0%;
+    color: #5a5959;
+}
+
+.offers-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #d22828;
+    margin:30px 0;
+}
+
+.offers-text p{
+    margin-top: 0%;
+    font-size: 18px;
+    word-spacing: 2px;
+    line-height: 130%;
+    color: #5a5959;
+}
+
+.offers-text a{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    background-color: #000000;
+    color:white;
+    margin-left: 550px;
+    margin-top: 2%;
+    margin-left: 0%;
+    width: 100px;
+    padding: 12px 25px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    box-shadow: rgb(117, 115, 115) 2px 2px 4px;
+}
+
+.offers-text a:hover{
+    background-color:#d22828;
+}
+
+.daily-deals{
+    margin: 4% 0%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.gifts{
+    background: url(Images/bg-img-3.jpg) fixed no-repeat center;
+    background-size: cover;
+    margin: 1% 0%;
+    max-width: 100%;
+    height: 70vh;
+}
+
+.gifts-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 6% 0 2%;
+}
+
+.gifts-text h2{
+    font-size: 28px;
+    font-weight:200;
+    margin-bottom: 0%;
+}
+
+.gifts-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color:rgba(0,0,128);
+    margin:25px 0;
+    text-shadow: #cacaca 2px 2px 3px;
+}
+
+.gifts-text p{
+    margin-top: 0%;
+    font-size: 22px;
+    font-weight: lighter;
+    word-spacing: 2px;
+    color: #5a5959;
+}
+
+.gifts-text a{
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    background-color: #d22828;
+    color:white;
+    margin-left: 550px;
+    margin-top: 2%;
+    width: 100px;
+    padding: 13px 25px;
+    font-size: 17px;
+    letter-spacing: 2px;
+    box-shadow: rgb(117, 115, 115) 2px 2px 4px;
+}
+
+.gifts-text a:hover{
+    background-color: black;
+}
+
+.subs-email{
+    border: solid 2px black;
+}
+
+.subscribe{
+    height: 45vh;
+    margin-top: 10%;
+    text-align: center;
+    background-color: #f4f3f3;
+}
+
+.subs-text{
+    margin-top: 5%;
+}
+
+.subs-text h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform:uppercase;
+    font-size: 27px;
+    letter-spacing: 1px;
+    margin: 2% 0%;
+    color: #d22828;
+}
+
+.subs-text p{
+    color: #615f5f;
+}
+
+#email{
+    font-size: 15px;
+    padding:13px 10px;
+    margin: 1% 0%;
+    border:solid 1px #d22828;
+    width: 600px;
+}
+
+.subs-btn{
+    font-size: 15px;
+    padding:13px 10px;
+    margin: 1% 0%;
+    background-color: #000000;
+    color: #ffffff;
+    letter-spacing: 1px;
+}

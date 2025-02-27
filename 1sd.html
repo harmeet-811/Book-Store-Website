@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Only Tabs (No Jumping)</title>
+    <link rel="stylesheet" href="1sd.css">
+</head>
+<body>
+
+    <div class="tabs">
+        <!-- Hidden Radio Buttons -->
+        <input type="radio" id="tab1" name="tabs" checked>
+        <input type="radio" id="tab2" name="tabs">
+        <input type="radio" id="tab3" name="tabs">
+
+        <!-- Tab Links -->
+        <div class="tab-links">
+            <label for="tab1" class="tab-link">Tab 1</label>
+            <label for="tab2" class="tab-link">Tab 2</label>
+            <label for="tab3" class="tab-link">Tab 3</label>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+            <div class="tab-pane" id="content1">Content for Tab 1</div>
+            <div class="tab-pane" id="content2">Content for Tab 2</div>
+            <div class="tab-pane" id="content3">Content for Tab 3</div>
+        </div>
+    </div>
+
+</body>
+</html>

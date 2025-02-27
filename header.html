@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop Header</title>
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="left-icons">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-clipboard"></i>
+        </div>
+        <div class="logo">
+            <img src="Images/logo2.jfif" />
+        </div>
+        <div class="right-icons">
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              IN <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#" onclick="selectOption('English')">English</a>
+              <a href="#" onclick="selectOption('French')">French</a>
+              <a href="#" onclick="selectOption('Spanish')">Spanish</a>
+              <a href="#" onclick="selectOption('English')">English</a>
+              <a href="#" onclick="selectOption('French')">French</a>
+              <a href="#" onclick="selectOption('Spanish')">Spanish</a>
+            </div>
+          </div>
+          <i class="fas fa-user"></i>
+          <i class="fas fa-search"></i>
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              English <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#">Home <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Categories <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Brands <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Best Sellers<i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

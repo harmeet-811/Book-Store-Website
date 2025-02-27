@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+
+  <body>
+
+    <header class="all-header" id="head">
+        <div class="top-header">
+          <div class="left-icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-clipboard"></i>
+          </div>
+          <div class="logo">
+              <img src="Images/logo2.jfif" />
+          </div>
+          <div class="right-icons">
+            <div class="dropdown">
+              <button class="dropdown-btn">
+                ENG <i class="fas fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#" onclick="selectOption('English')">English</a>
+                <a href="#" onclick="selectOption('French')">French</a>
+                <a href="#" onclick="selectOption('Spanish')">Spanish</a>
+              </div>
+            </div>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-search"></i>
+            <!--<div class="dropdown">
+              <button class="dropdown-btn">
+                English <i class="fas fa-caret-down"></i>
+              </button>-->
+            </div>
+          </div>
+        </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-active">
+            <a href="home.html">Home </a>
+          </li>
+          <li>
+            <a href="categories.html">Categories <i class="fas fa-caret-down"></i></a>
+          </li>
+          <li>
+            <a href="brands.html">Brands </a>
+          </li>
+          <li>
+            <a href="bestsellers.html">Best Sellers</i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="top">
+      <div class="top-text">
+        <h3>Ultimate Book Sale</h3>
+        <h1>Get 70% Off For All<br/>Design Books</h1>
+        <p>Why choose one when you can have them all? <br/> Enjoy <span class="top-span">Huge Discounts</span> on all books and build your dream library.</p>
+        <a href="categories.html" class="top-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="option">
+      <div class="opt-div">
+        <img src="Images/option 1.png" alt="text"/>
+        <p><span class="opt-span">free Shipping</span><br/>Order over $100</p>
+      </div>
+      <div class="opt-div">
+        <img src="Images/option 2.png" alt="text"/>
+        <p><span class="opt-span">Secure payment</span><br/>100% Secure Payment</p>
+      </div>
+      <div class="opt-div">
+        <img src="Images/option 3.png" alt="text"/>
+        <p><span class="opt-span">Best Price</span><br/>Guaranteed Price</p>
+      </div>
+      <div class="opt-div">
+        <img src="Images/option 4.png" alt="text"/>
+        <p><span class="opt-span">free returns</span><br/>Within 30 Days returns</p>
+      </div>
+    </section>
+
+    <a href="#" class="arrival-h2"><h2>new arrivals</h2></a>
+    
+    <section class="arrival">
+      <div class="arrival-tabs">
+
+        <input type="radio" id="tab1" name="tabs" checked>
+        <input type="radio" id="tab2" name="tabs">
+        <input type="radio" id="tab3" name="tabs">
+        <input type="radio" id="tab4" name="tabs">
+        <input type="radio" id="tab5" name="tabs">
+
+        <div class="tab-links">
+            <label for="tab1" class="tab-link">All</label>
+            <label for="tab2" class="tab-link">Cooking</label>
+            <label for="tab3" class="tab-link">History</label>
+            <label for="tab4" class="tab-link">Fantacy</label>
+            <label for="tab5" class="tab-link">Romance</label>
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane" id="content1">
+
+              <div class="tab-books">
+                <a href="girl at golder city.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/girls at the golden city.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>Girls at the Golden City</h4>
+                      <p>Rs. 1,060.95</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="visit  in the north.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/visit in the north.jpg" alt="book"/>
+                      <span class="pane-pic-badge">60%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Visit in the North</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span">Rs. 2,210.31</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="The stadium by night.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the stadium by night.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>The Stadium by Night</h4>
+                      <p>Rs. 3,094.44</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="When the star align.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/when the stars align.jpg" alt="book"/>
+                      <span class="pane-pic-badge">26%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>Sage isaias</h6>
+                      <h4>When The Stars Align</h4>
+                      <p>Rs. 1,945 <span class="pane-content-span">Rs. 2,652.37</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="last time we broke up.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the last time we broke up.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>Last Time We Broke Up</h4>
+                      <p>Rs. 884.12</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="Donate a book.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/donate a book.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Donate a Book</h4>
+                      <p>Rs. 1,237.77</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="book for a cause.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/books for a cause.jpg" alt="book"/>
+                      <span class="pane-pic-badge">50%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>Jayden judah</h6>
+                      <h4>Books For a Cause</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span"> Rs. 1,768.25</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="fresh and healthy eats.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/cooked meals.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>Home Made Meals</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="content2">
+
+              <div class="tab-books">
+                <a href="Donate a book.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/donate a book.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Donate a Book</h4>
+                      <p>Rs. 1,237.77</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="Endless summer.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/endless summer.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erick maertin</h6>
+                      <h4>Endeless Summer</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="fresh and healthy eats.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/cooked meals.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>Home Made Meals</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="the stage by cabin.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the stag by the cabin.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>The Stage By Gabin</h4>
+                      <p>Rs. 1,326</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="seafood grounet.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/seafood gourmet.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>robin triple</h6>
+                      <h4>Seafood Gourment</h4>
+                      <p>Rs. 1,149.36</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="fresh and healthy eats.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/fresh & healthy eats.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>robin triple</h6>
+                      <h4>Fresh Healthy Eats</h4>
+                      <p>Rs. 3,978.56</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="make me wake.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/wake me up.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>Wake Me Up</h4>
+                      <p>Rs. 618.89</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="Silent women.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/silent women.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>Silent Women</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="content3">
+
+              <div class="tab-books">
+                <a href="Silent women.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/silent women.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>Silent Women</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="make me wake.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/wake me up.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>Wake Me Up</h4>
+                      <p>Rs. 618.89</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="book for a cause.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/books for a cause.jpg" alt="book"/>
+                      <span class="pane-pic-badge">50%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>Jayden judah</h6>
+                      <h4>Books For a Cause</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span"> Rs. 1,768.25</span></p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="gift of love.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the gift of love.jpg" alt="book"/>
+                      <span class="pane-pic-badge">15%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>The Gift of Love</h4>
+                      <p>Rs. 1,060.95 <span class="pane-content-span"> Rs. 1,257.23</span></p>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="fresh and healthy eats.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/fresh & healthy eats.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>robin triple</h6>
+                      <h4>Fresh Healthy Eats</h4>
+                      <p>Rs. 3,978.56</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="seafood grounet.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/seafood gourmet.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>robin triple</h6>
+                      <h4>Seafood Gourment</h4>
+                      <p>Rs. 1,149.36</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="content4">
+
+              <div class="tab-books">
+                <a href="girl at golder city.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/girls at the golden city.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>Girls at the Golden City</h4>
+                      <p>Rs. 1,060.95</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="visit  in the north.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/visit in the north.jpg" alt="book"/>
+                      <span class="pane-pic-badge">60%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Visit in the North</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span">Rs. 2,210.31</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="The stadium by night.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the stadium by night.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>The Stadium by Night</h4>
+                      <p>Rs. 3,094.44</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="When the star align.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/when the stars align.jpg" alt="book"/>
+                      <span class="pane-pic-badge">26%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>Sage isaias</h6>
+                      <h4>When The Stars Align</h4>
+                      <p>Rs. 1,945 <span class="pane-content-span">Rs. 2,652.37</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="last time we broke up.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the last time we broke up.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>Last Time We Broke Up</h4>
+                      <p>Rs. 884.12</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="Donate a book.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/donate a book.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Donate a Book</h4>
+                      <p>Rs. 1,237.77</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="book for a cause.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/books for a cause.jpg" alt="book"/>
+                      <span class="pane-pic-badge">50%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>Jayden judah</h6>
+                      <h4>Books For a Cause</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span"> Rs. 1,768.25</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="fresh and healthy eats.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/cooked meals.jpg" alt="book"/>
+                      <span class="pane-pic-badge">Sold out</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>Home Made Meals</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="tab-pane" id="content5">
+
+              <div class="tab-books">
+                <a href="lightspeed robot.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/robots in lightspeed.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>Lightspeed Robots</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="gift of love.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the gift of love.jpg" alt="book"/>
+                      <span class="pane-pic-badge">15%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>jayden judah</h6>
+                      <h4>The Gift of Love</h4>
+                      <p>Rs. 1,060.95 <span class="pane-content-span">Rs. 1,257.23</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="The happy lemon.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/the happy lemon.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>sage isaias</h6>
+                      <h4>The Happy Lemon</h4>
+                      <p>Rs. 1,060.95</p>
+                    </div>
+                  </div>
+                </a>
+  
+                <a href="skin like daffodil.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/skin like daffodils.jpg" alt="book"/>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>erik martin</h6>
+                      <h4>Skin Like Daffodiles</h4>
+                      <p>Rs. 2,210.31</p>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="visit  in the north.html" class="tab-book-link">
+                  <div class="tab-book">
+                    <div class="pane-pic">
+                      <img src="Images/visit in the north.jpg" alt="book"/>
+                      <span class="pane-pic-badge">60%</span>
+                      <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+                      <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+                      <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+                    </div>
+                    <div class="pane-content">
+                      <h6>james dylan</h6>
+                      <h4>Visit in the North</h4>
+                      <p>Rs. 884.12 <span class="pane-content-span">Rs. 2,210.31</span></p>
+                    </div>
+                  </div>
+                </a>
+  
+              </div>
+
+            </div>
+      </div>
+    </section>
+
+    <section class="book-fest">
+      <div class="book-fest-text">
+        <h2>Shop wide range of collections</h2>
+        <h1>Book festival</h1>
+        <p>All Books are flat <b>50% off</b></p>
+        <a href="categories.html" class="book-fest-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <a href="#" class="arrival-h2-2"><h2>Best author of the week</h2></a>
+
+    <section class="best-author">
+      <div class="best-author-pic">
+        <img src="Images/author.jpg" alt="author"/>
+      </div>
+      <div class="best-author-text">
+        <h1>Dwayne Johnson<span class="best-author-text-span"> - author </span></h1>
+        <p>"Dwayne Johnson is a masterful storyteller, weaving words into captivating narratives that inspire, entertain, and resonate deeply with readers. With a unique ability to craft compelling characters and immersive worlds, his books transport audiences into stories filled with emotion, adventure, and thought-provoking themes. Whether it's an edge-of-your-seat thriller, an uplifting tale of perseverance, or a deeply moving drama, Johnson's writing blends powerful storytelling with rich, vivid detail, making each book an unforgettable experience. His works continue to inspire readers across generations, proving that great stories have the power to connect, uplift, and transform lives."</p>
+        <h2>Awards</h2>
+        <div class="author-awards">
+          <img class="author-awards-pics" src="Images/award-1.jpg"alt="Awards"/>
+          <img class="author-awards-pics" src="Images/award-2.jpg"alt="Awards"/>
+          <img class="author-awards-pics" src="Images/award-3.jpg"alt="Awards"/>
+          <img class="author-awards-pics" src="Images/award-4.jpg"alt="Awards"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <div class="offers-text">
+        <h4>Special Offers</h4>
+        <h1>30% Discount On Books Learn Language</h1>
+        <p>Enhance your skills with our exclusive discount on books that help you master new languages. Dive into a world of knowledge and unlock new opportunities!</p>
+        <a href="categories.html" class="offers-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <a href="#" class="arrival-h2"><h2>Daily Deals</h2></a>
+
+    <section class="daily-deals">
+      <div class="tab-books">
+
+        <a href="Amazing structures.html" class="tab-book-link">
+          <div class="tab-book">
+            <div class="pane-pic">
+              <img src="Images/amazing structures.jpg" alt="book"/>
+              <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+              <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+              <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+            </div>
+            <div class="pane-content">
+              <h6>jayden judah</h6>
+              <h4>Beauty of Structures</h4>
+              <p>Rs. 3,713.32</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="The red dessert.html" class="tab-book-link">
+          <div class="tab-book">
+            <div class="pane-pic">
+              <img src="Images/the red planet.jpg" alt="book"/>
+              <span class="pane-pic-badge">19%</span>
+              <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+              <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+              <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+            </div>
+            <div class="pane-content">
+              <h6>sage isaias</h6>
+              <h4>The Red Desert</h4>
+              <p>Rs. 3,536.50 <span class="pane-content-span">Rs. 4,420.62</span></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="The stadium by night.html" class="tab-book-link">
+          <div class="tab-book">
+            <div class="pane-pic">
+              <img src="Images/the stadium by night.jpg" alt="book"/>
+              <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+              <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+              <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+            </div>
+            <div class="pane-content">
+              <h6>erik martin</h6>
+              <h4>The Stadium by Night</h4>
+              <p>Rs. 3,094.44</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="adventurous eating.html" class="tab-book-link">
+          <div class="tab-book">
+            <div class="pane-pic">
+              <img src="Images/adventurous eating.jpg" alt="book"/>
+              <span class="pane-pic-icon1"><i class="fas fa-shopping-cart"></iclass></i></span>
+              <span class="pane-pic-icon2"><i class="fas fa-heart"></iclass></i></span>
+              <span class="pane-pic-icon3"><i class="fas fa-search"></iclass></i></span>
+            </div>
+            <div class="pane-content">
+              <h6>james dylan</h6>
+              <h4>Adenturous Eating</h4>
+              <p>Rs. 1,768.25</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+    
+    <section class="gifts">
+      <div class="gifts-text">
+        <h1>Wonderful Gifts</h1>
+        <p>Give your family and friends a book</p>
+        <a href="categories.html" class="gifts-btn">Shop Now</a>
+      </div>
+    </section>   
+
+    <section class="subscribe">
+      <div class="subs-text">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Enter your email address to receive regular updates, as well as news on upcoming events and special offers.</p>
+        <input type="email" id="email" placeholder="Email Address" maxsize="50"/>
+        <a href="#" class="subs-btn" type="submit">Subscribe</a>
+      </div>
+    </section>  
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section contact">
+            <h2>Book Breeze</h2>
+            <p>1203 Town Center<br />Drive FL 33458 USA</p>
+            <p>+0000-123-456-789</p>
+            <p>bookbreeze@example.com</p>
+          </div>
+          <div class="footer-section">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping Information</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Search Terms</a></li>
+              <li><a href="#">Advanced Search</a></li>
+              <li><a href="#">Helps & FAQs</a></li>
+              <li><a href="#">Store Location</a></li>
+              <li><a href="#">Orders & Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Refund & Returns</a></li>
+              <li><a href="#">Deliveries</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+          <p>All Rights Reserved &copy; 2025, Bookly-theme (password: buddha)</p>
+          <img src="Images/logo2.jfif" />
+        </div>
+
+        <span class="top-points">
+          <a href="#head" ><i class="fa fa-hand-point-up"></i></a>
+        </span>
+
+    </footer>
+
+  </body>
+</html>

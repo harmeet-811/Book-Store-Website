@@ -1,0 +1,144 @@
+/* Reset default styles */
+body, h1, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+}
+
+/* Top Header Section */
+/*
+.all-header{
+    position: fixed;
+}*/
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    background-color: #fff;
+    color: black;
+    z-index: 1000;
+}
+
+.top-header i{
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-header i:hover{
+    background-color: #fff;
+    color: #d43f28;
+    transform: scale(1.1);
+}
+
+
+/* Left Icons */
+.left-icons i {
+    margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo{
+    text-align: center;
+    margin-left: 80px;
+}
+
+.logo img{
+    height: 100px;
+    width:350px;
+}
+
+/* Right Icons */
+.right-icons {
+    display: flex;
+    align-items: center;
+}
+
+.right-icons i {
+    margin:0px 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropdown-btn {
+    background-color: #d43f28;
+    color: white;
+    border: solid;
+    padding: 8px 0px 8px 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: wheat;
+    min-width: 120px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-btn:hover{
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navigation Bar */
+.main-nav {
+    background-color: #d43f28;
+    padding: 10px 0;
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+}
+
+.main-nav img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 10px;
+}
+
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+   
+}
+
+.main-nav ul li {
+    margin: 15px 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.main-nav ul li a:hover {
+    color: #ffcccb;
+}

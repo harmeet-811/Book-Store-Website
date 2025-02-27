@@ -1,0 +1,131 @@
+.nav-active a{
+    color: #ffcccb   !important;
+    font-size: 17px;
+}
+
+.slider1 img{ 
+    width: 100%;
+    height: 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    opacity: calc();
+    background: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  #preloader .spinner {
+    background: url('images/icons8-literature_1.webp') no-repeat center center;
+    background-size: contain;
+    width: 2500px;
+    height: 250px;
+  }
+
+
+  .slidr {
+    padding-top: 85px;
+    padding-bottom: 85px;
+    margin-bottom: 40px;
+    background: url('Images/background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    position: relative;
+  }
+
+  .slidr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 234, 222, 0.5);
+    backdrop-filter: blur(3px); 
+  }
+
+  .slidr_title, .slidr a, .slidr__sep, .slidr span {
+    position: relative;
+   color: black;   
+  }
+
+
+  .Humor-section {
+    padding: 20px;
+    background-color: #fff; 
+  }
+  
+  .Humor-section h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 45px;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    margin: 50px 20px;
+  }
+  
+  .sidebar {
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+  
+   
+  }
+  
+  .main-content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .Humor-card {
+    width: calc(33.33% - 20px);
+    text-align: center;
+  }
+  
+  .Humor-card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    
+  }
+  
+  .Humor-card p {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .Humor-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .Humor-card a:hover {
+    text-decoration: underline;
+  }
+
+  #checkbox{
+    width: 20px;
+    height: 20px;
+  }

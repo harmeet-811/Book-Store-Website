@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.tabs {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Style the tab links */
+.tab-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-link {
+    padding: 10px 15px;
+    background: #ddd;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-link:hover {
+    background: #bbb;
+}
+
+/* Tab Content */
+.tab-content {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #f9f9f9;
+    position: relative;
+    height: 100px; /* Prevents layout shifts */
+}
+
+/* Hide all tab content by default */
+.tab-pane {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* Show the selected tab */
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3 {
+    display: block;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop Header</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="categories.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="bestsellers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  /> 
+  </head>
+  
+  <body>
+    <div id="preloader" style="display: none;">
+      <div class="spinner"></div>
+    </div>
+
+    <header class="all-header" id="head">
+        <div class="top-header">
+            <div class="left-icons">
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-clipboard"></i>
+            </div>
+            <div class="logo">
+                <img src="Images/logo2.jfif" />
+            </div>
+            <div class="right-icons">
+              <div class="dropdown">
+                <button class="dropdown-btn">
+                  ENG <i class="fas fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="selectOption('English')">English</a>
+                  <a href="#" onclick="selectOption('French')">French</a>
+                  <a href="#" onclick="selectOption('Spanish')">Spanish</a>
+                </div>
+              </div>
+              <i class="fas fa-user"></i>
+              <i class="fas fa-search"></i>
+              <!--<div class="dropdown">
+                <button class="dropdown-btn">
+                  English <i class="fas fa-caret-down"></i>
+                </button>-->
+              </div>
+            </div>
+          </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="categories.html" onclick="showPreloader()">Categories <i class="fas fa-caret-down"></i></a>
+            
+          </li>
+          <li>
+            <a href="brands.html">Brands</i></a>
+          </li>
+          <li class="nav-active">
+            <a href="bestsellers.html">Best Sellers</i></a>
+          </li>
+          <li>
+            <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+  
+    <nav class="slidr">
+        <div class="slidr-cntnr">
+          <div class="row"> 
+            <h1 class="slidr_title">Collection</h1>
+            <a href="home.html" title="kindly go Back to the home">Home </a>
+            <span aria-hidden="true" class="slidr__sep">/</span>
+            <span>Humor</span>
+          </div> 
+        </div>
+    </nav>
+
+
+
+      <section class="Humor-section">
+        <h1>Humor</h1>
+        <div class="container">
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <h2>Availability</h2>
+            <label><input type="checkbox" id="checkbox"> In stock (4)</label><br>
+            <label><input type="checkbox" id="checkbox"> Out of stock (0)</label>
+      
+            <h2>Product Type</h2>
+            <label><input type="checkbox" id="checkbox"> Entertainment (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> Fiction (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Literature (1)</label><br>
+            
+      
+            <h2>More Filters</h2>
+            <label><input type="checkbox" id="checkbox"> $300 - $400 (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> $400 - $500 (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> $500 - $700 (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Adam Baid (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Alice James (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Audible Audiobook (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Entertainment (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> fiction (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Hardcover (1)</label><br>
+            <label><input type="checkbox" id="checkbox"> Japanese (1)</label><br>
+            
+
+            
+      
+            <h2>Brand</h2>
+            <label><input type="checkbox" id="checkbox"> Erik Martin (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> Jayden Judah (3 )</label><br>
+            <label><input type="checkbox" id="checkbox"> Sage Isaias (3 )</label><br>
+      
+            <h2>Format</h2>
+            <label><input type="checkbox" id="checkbox"> Audible Audiobook (3 )</label><br>
+            <label><input type="checkbox" id="checkbox"> Hard Cover (2 )</label><br>
+            <label><input type="checkbox" id="checkbox"> Kindle Edition (2 )</label><br>
+            <label><input type="checkbox" id="checkbox"> Large Print (3)</label><br>
+            <label><input type="checkbox" id="checkbox"> Paperback (2)</label><br>
+      
+            <h2>Language</h2>
+            <label><input type="checkbox" id="checkbox"> English (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> Hebrew (2 )</label><br>
+            <label><input type="checkbox" id="checkbox"> Japanese (2)</label><br>
+            <label><input type="checkbox" id="checkbox"> Korean (3)</label><br>
+            <label><input type="checkbox" id="checkbox"> Spanish (3 )</label><br>
+          </div>
+      
+          <div class="main-content">
+            <div class="Humor-card">
+              <a href="adventurous eating.html">
+                <img src="Images/adventurous eating.jpg" alt="Product 1">
+                <p>Product 1</p>
+                <p>Beauty of Structures > Rs. 884.07</p>
+              </a>
+            </div>
+            <div class="Humor-card">
+              <a href="Amazing structures.html">
+                <img src="Images/amazing structures.jpg" alt="Product 2">
+                <p>Product 2</p>
+                <p>Beauty of Structures > Rs. 884.07</p>
+              </a>
+            </div>
+            <div class="Humor-card">
+              <a href="book for a cause.html">
+                <img src="Images/books for a cause.jpg" alt="Product 3">
+                <p>Product 3</p>
+                <p>Beauty of Structures > Rs. 884.07</p>
+              </a>
+            </div>
+            <div class="Humor-card">
+              <a href="Donate a book.html">
+                <img src="Images/donate a book.jpg" alt="Product 4">
+                <p>Product 4</p>
+                <p>Beauty of Structures > Rs. 884.07</p>
+              </a>
+            </div>
+            <div class="Humor-card">
+              <a href="Endless summer.html">
+                <img src="Images/endless summer.jpg" alt="Product 5">
+                <p>Product 5</p>
+                <p>Beauty of Structures > Rs. 884.07</p>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+ 
+
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact">
+              <h2>Book Breeze</h2>
+              <p>1203 Town Center<br />Drive FL 33458 USA</p>
+              <p>+0000-123-456-789</p>
+              <p>bookbreeze@example.com</p>
+            </div>
+            <div class="footer-section">
+              <h3>Help</h3>
+              <ul>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Shipping Information</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#">Search Terms</a></li>
+                <li><a href="#">Advanced Search</a></li>
+                <li><a href="#">Helps & FAQs</a></li>
+                <li><a href="#">Store Location</a></li>
+                <li><a href="#">Orders & Returns</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Refund & Returns</a></li>
+                <li><a href="#">Deliveries</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <div class="footer-bottom">
+            <p>All Rights Reserved &copy; 2025, Bookly-theme (password: buddha)</p>
+            <img src="Images/logo2.jfif" />
+          </div>
+  
+          <span class="top-points">
+            <a href="#head" ><i class="fa fa-hand-point-up"></i></a>
+          </span>
+    </footer>
+
+    <script>
+      function showPreloader() {
+        document.getElementById("preloader").style.display = "flex";
+        setTimeout(function () {
+          document.getElementById("preloader").style.display = "none";
+        }, 2000);
+      }
+    </script>
+
+  </body>
+</html>

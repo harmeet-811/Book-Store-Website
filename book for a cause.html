@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book for a cause</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="describeB.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <header class="all-header" id="head">
+      <div class="top-header">
+        <div class="left-icons">
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-clipboard"></i>
+        </div>
+        <div class="logo">
+            <img src="Images/logo2.jfif" />
+        </div>
+        <div class="right-icons">
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              ENG <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#" onclick="selectOption('English')">English</a>
+              <a href="#" onclick="selectOption('French')">French</a>
+              <a href="#" onclick="selectOption('Spanish')">Spanish</a>
+            </div>
+          </div>
+          <i class="fas fa-user"></i>
+          <i class="fas fa-search"></i>
+          <!--<div class="dropdown">
+            <button class="dropdown-btn">
+              English <i class="fas fa-caret-down"></i>
+            </button>-->
+          </div>
+        </div>
+      </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li class="nav-active">
+          <a href="home.html">Home </a>
+        </li>
+        <li>
+          <a href="categories.html">Categories <i class="fas fa-caret-down"></i></a>
+        </li>
+        <li>
+          <a href="brands.html">Brands </a>
+        </li>
+        <li>
+          <a href="bestsellers.html">Best Sellers</i></a>
+        </li>
+        <li>
+          <a href="#">Pages <i class="fas fa-caret-down"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+    <nav class="text"  aria-label="Text">
+        <div class="page-width">
+          <h1 class="Text-Title"><span style="font-size: 40px;">Product</span></h1>
+          <div class="row">
+            <a href="/collections/all">All</a>
+            <span aria-hidden="true" class="title">/</span>
+    
+            <span>Book for a cause</span>
+          </div>
+        </div>
+    </nav>
+    <aside class="sidebar">
+      <h2>Best Sales</h2>
+      <div class="book">
+        <img src="Images/silent women.jpg" alt="Book 1">
+        <div class="book-info">
+          <h3>Silent Women</h3>
+          <p class="price">Rs. 2210.87</p>
+        </div>
+      </div>
+    
+      <div class="book">
+        <img src="Images/wake me up.jpg" alt="Book 2">
+        <div class="book-info">
+          <h3>Wake Me</h3>
+          <p class="price">Rs. 4313.86</p>
+        </div>
+      </div>
+    </aside>
+    <!--<div class="book-display">
+      <img src=https://bookly-theme.myshopify.com/cdn/shop/products/shop-new-95_b0b53360-a171-427b-9dc6-0bf965bcfdae.jpg?v=1587120117&width=493" 
+           alt="Book Display" class="book-front">
+    </div>-->
+    <div class="book-container">
+      <div class="book-display">
+          <img src="Images/books for a cause.jpg";
+               alt="Book Display" class="book-front">
+               <div class="thumbnails">
+                <img src="Images/books for a cause.jpg" alt="thumbnail 1"/>
+                <img src="Images/books for a cause.jpg" alt="thumbnail 2"/>
+                <img src="Images/books for a cause.jpg" alt="thumbnail 3"/>
+               </div>
+      </div>
+  
+     
+  </div>
+  <div class="book-details">
+    <h2 class="book-title"><strong>Book for a cause</strong></h2>
+    <p class="book-description">
+        <strong>About Author:</strong> About Author: This book's author, John, is one of the most popular writers in American history. He was California-born but attended school in New York. He attended Harvard University to...
+    </p>
+    <p class="book-price"><span style="text-decoration-color: grey; font-size: 35px;"> Rs. 1062.67 </span></p>
+    <p class="book-vendor"><strong>Vendor:</strong>  Jayden Judah</p>
+    <p class="book-type"><strong>Type:</strong> Entertainment </p>
+     <p><strong>Format:</strong> 
+      <span class="highlight">Large Print</span> 
+      <span class="highlight">Page-book</span> 
+      <span class="highlight">paper back</span>
+  </p>
+
+  <p><strong>Language:</strong> 
+      <span class="highlight">Spanish</span> 
+      <span class="highlight"> Japanese</span> 
+      <span class="highlight">Hebrew</span>
+  </p>
+
+  <p><strong>Publication Date:</strong> 
+      <span class="highlight">1 Feb 2023</span> 
+     
+  </p>
+
+  <p><strong>Quantity:</strong> 
+     
+      <input type="number" value="1" min="1"> 
+      
+  </p>
+
+  <p><strong>Availability:</strong> 25 In stock</p>
+  <p><strong>Sub total:</strong> Rs. 1062.27</p>
+
+  <div class="buttons">
+      <button class="cart">Add To Cart</button>
+      <button class="wishlist">Add To Wishlist</button>
+      <button class="buy">Buy It Now</button>
+  </div>
+  <p style="font-family: sans-serif;"><i class="fas fa-bus"></i> Estimated delivery in 5-7 days!</p>
+  <a href="#popup" class="open" style="font-family: sans-serif;font-size: 24px; color: brown;">Let us know about your query!</a>
+  <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <a href="#" class="close-popup">&times;</a>
+            <h2>Let us know about your query!</h2>
+            
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Subject" required></textarea>
+
+                <!-- Radio Buttons -->
+                <div class="contact-options">
+                    <label><input type="radio" name="contact" value="mail"> Mail</label>
+                    <label><input type="radio" name="contact" value="phone"> Phone</label>
+                    <label><input type="radio" name="contact" value="both"> Both</label>
+                </div>
+
+                <!--<button type="submit">Send</button>-->
+                <button class="buttonss" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Radio Buttons for Tabs -->
+<input type="radio" name="tab" id="tab1" checked>
+<input type="radio" name="tab" id="tab2">
+<input type="radio" name="tab" id="tab3">
+
+<!-- Tab Labels -->
+<div class="tabs">
+    <label for="tab1" class="tab-label">Description</label>
+    <label for="tab2" class="tab-label">Shipping Information</label>
+    <label for="tab3" class="tab-label">Reviews</label>
+</div>
+
+<!-- Tab Content -->
+<div class="tab-content content-1">
+    <h3>About Author</h3>
+    <p><span style="font-weight: 400;">This book's author, John, is one of the most popular writers in American history. He was California-born but attended school in New York. He attended Harvard University to study literature. He is currently based in Texas, and this was his 18th book. Among his 18 books, five were best-sellers and received best-seller awards.</span>
+
+    </p><br/>
+    <p><b>Description:-</b></p>
+    <p>This book describes how a detective tracks down a serial killer. Park Town is a renowned neighborhood in Berlin. In the city, the insane only brutally murder their lovers. Psycho will reveal the information before the couple is murdered. The story comes to a close with the investigator identifying the murderer using conflicting clues.</p><br/>
+    <ul>
+      <li style="font-weight: 400;">
+  
+        <b>Pages:-</b>
+        <span style="font-weight: 400;">250 Pages</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>Author:-</b>
+        <span style="font-weight: 400;">Jhon</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>Publisher:-</b>
+        <span style="font-weight: 400;">Shopify Theme</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>ISBN:-</b>
+        <span style="font-weight: 400;">00589</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>Genre:-</b>
+        <span style="font-weight: 400;">Literary Fiction, Romance, Thriller</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>Language:-</b>
+        <span style="font-weight: 400;">English</span>
+      </li>
+      <li style="font-weight: 400;">
+  
+        <b>Reading Age:-</b>
+        <span style="font-weight: 400;">Good for 10+</span>
+      </li>
+      
+    </ul>
+    
+    <p><b>Terms of sale:</b></p>
+    <p>We offer a seven-day return and exchange policy. Returns and exchanges can be initiated from your account's orders section. The tags and stickers should be left on to ensure that the item is returned to you in the same condition in which it was delivered.  </p>
+</div>
+
+<div class="tab-content content-2">
+    <h2>Return Policy</h2>
+    <p><span style="font-weight: 400;">You may return most new, unopened items within 30 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).</p></span>
+    <p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).
+    </p>
+    <p>
+      If you need to return an item, simply login to your account, view the order using the 'Complete Orders' link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.
+      </p>
+      <p style="font-size: 24px;"><b>Shippping Details</b></p>
+
+      <p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.</p>
+      <p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.
+
+        Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound</p>
+</div>
+
+<div class="tab-content content-3">
+  <div class="review-container">
+  <h2>Customer Reviews</h2>
+  <div class="rating-overview">
+
+  <div class="stars">★★★★★ <span>5.00 out of 5</span></div>
+      <p>Based on 1 review</p>
+      <div class="rating-distribution">
+          <div class="bar">
+              <span>★★★★★</span>
+              <div class="progress"><div class="filled" style="width: 100%;"></div></div>
+              <span>5</span>
+          </div>
+          <div class="bar">
+              <span>★★★★☆</span>
+              <div class="progress"><div class="filled" style="width: 80%;"></div></div>
+              <span>4</span>
+          </div>
+          <div class="bar">
+              <span>★★★☆☆</span>
+              <div class="progress"><div class="filled" style="width: 60%;"></div></div>
+              <span>3</span>
+          </div>
+          <div class="bar">
+              <span>★★☆☆☆</span>
+              <div class="progress"><div class="filled" style="width: 40%;"></div></div>
+              <span>2</span>
+          </div>
+          <div class="bar">
+              <span>★☆☆☆☆</span>
+              <div class="progress"><div class="filled" style="width: 20%;"></div></div>
+              <span>1</span>
+          </div>
+      </div>
+  </div>
+  
+  
+  <div class="reviews">
+      <h3>Most Recent</h3>
+      <div class="review">
+          <div class="review-header">
+              <span class="stars">★★★★★</span>
+              <span class="user">Harmeet</span>
+              <span class="date">24/02/2025</span>
+          </div>
+          <h4>Amazing!!</h4>
+          <p>Psycho is a dark and thrilling crime novel that takes readers deep into the heart of Berlin’s Park Town, a neighborhood hiding a terrifying secret. The story follows a determined detective as he unravels the mystery behind a series of gruesome murders where the insane target only their lovers. With each crime, the killer leaves behind cryptic clues, challenging the investigator to solve the case before the next tragedy strikes.
+          </p>
+      </div>
+  </div>
+</div>
+</div>
+    
+    
+
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section contact">
+            <h2>Book Breeze</h2>
+            <p>1203 Town Center<br />Drive FL 33458 USA</p>
+            <p>+0000-123-456-789</p>
+            <p>bookbreeze@example.com</p>
+          </div>
+          <div class="footer-section">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Information</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping Information</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Search Terms</a></li>
+              <li><a href="#">Advanced Search</a></li>
+              <li><a href="#">Helps & FAQs</a></li>
+              <li><a href="#">Store Location</a></li>
+              <li><a href="#">Orders & Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Refund & Returns</a></li>
+              <li><a href="#">Deliveries</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="www.pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+          <a href="www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-bottom">
+          <p>All Rights Reserved &copy; 2025, Bookly-theme (password: buddha)</p>
+          <img src="Images/logo2.jfif" />
+        </div>
+
+        <span class="top-points">
+          <a href="#head" ><i class="fa fa-hand-point-up"></i></a>
+        </span>
+
+    </footer>
+
+  </body>
+</html>

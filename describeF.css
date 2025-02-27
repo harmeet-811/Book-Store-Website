@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #0b311a;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    width: 200px;  /* Adjust size */
+    height: 200px; /* Adjust size */
+    background-color: #e63946;
+    border-radius: 50%;
+    z-index: 0;  /* Send to background */
+}
+footer::before {
+    top: -80px;
+    left: -80px;
+}
+
+footer::after {
+    bottom: -80px;
+    right: -80px;
+}
+
+.footer-container {
+    position: relative;
+    z-index: 1; /* Ensure content is above the red circles */
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    margin-top: auto;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section {
+    margin: 50px;
+    
+}
+.footer-section h3, .contact h2 {
+    color: #e63946;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.footer-section ul li {
+    margin-top: 15%;
+}
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+.social-icons i {
+    width: 50px;
+    margin: 0 10px;
+    height: 30px;
+
+    
+}
+.social-icons a:hover{
+    text-decoration: underline;
+    color: #15b153;
+}
+/* .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+     */
+ 
+
+     .footer-bottom {
+        position: relative; /* Ensures child absolute positioning works within this container */
+        text-align: center; /* Centers the text */
+        padding: 20px;
+        /* background-color: #0f0e0e;  */
+        border-top: 1px solid #444;
+    
+    }
+    
+    .footer-bottom img {
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        
+        margin-top: 50px;
+        border-radius: 10%;
+   
+        width: 100px; /* Adjust size as needed */
+        height: 90px;
+    
+    }

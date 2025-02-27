@@ -1,0 +1,113 @@
+.nav-active a{
+    color: #ffcccb   !important;
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Josefin Sans','Nunito',sans-serif;
+}
+
+.brands-top{
+    background:url(Images/bg-blur-1.png) no-repeat center center scroll;
+    background-size: cover;
+    height: 38vh;
+    color: black;
+}
+
+.brands-top-div{
+    text-align: center;
+    color: black;
+    margin-top: 7%;
+}
+
+.brands-top-div p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-books{
+    margin-top: 35px;
+    background: #ffffff;
+    position: relative;
+    text-align: center;
+    height: 190vh;
+    margin-top: 10%;
+}
+
+.tab-pane {
+    display: none;
+    position: absolute;
+}
+
+.tab-books{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tab-book-link{
+    margin-bottom: 5%;
+}
+
+.pane-pic{
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pane-pic img{
+    height:70vh;
+    width: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tab-book:hover img{
+    transform: scale(1.05);
+    opacity:80%;
+}
+
+.pane-content{
+    text-decoration: none;
+    margin-top: 8%;
+}
+
+.pane-content h4{
+    margin-top: 5%;
+    margin-bottom:5%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.tab-book:hover .pane-content h4{
+    color: #d22828;
+}
+
+.tab-book:hover .pane-content-span{
+    color: black;
+}

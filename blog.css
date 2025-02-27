@@ -1,0 +1,97 @@
+.book-store #banner-image{
+  height: 350px;
+  width:100%; 
+opacity: 0.5;
+}
+.book-store .text{
+position: absolute;
+text-align: center;
+left: 50%;
+top: 55%;
+font-size: 2rem;
+transform: translate(-50%,-50%);
+font-family: sans-serif;
+opacity: 0.8;
+}
+
+.book-store .text2{
+position: absolute;
+text-align: center;
+left: 50%;
+top: 60%;
+font-size: 2rem;
+transform: translate(-50%,-50%);
+font-family: sans-serif;
+opacity: 0.8;
+}
+
+.parent {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px; 
+padding: 20px;
+
+}
+.parent a{
+color: black;
+
+}
+
+.card {
+width: 500px; 
+background-color: #fff;
+overflow: hidden;
+padding: 15px;
+
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+
+.card-content {
+padding: 10px;
+}
+
+.card h3 {
+margin: 10px 0;
+font-size: 18px;
+}
+
+.card p {
+font-size: 14px;
+color: #555;
+}
+
+.btn {
+display: inline-block;
+margin-top: 10px;
+padding: 10px 20px;
+background-color: rgb(209, 64, 49);
+color: white;
+text-decoration: none;
+border: none;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn:hover {
+background-color: #0056b3;
+}
+.pagination_item{
+  transition: var(--duration-long);
+  background:rgb(209, 64, 49);
+  color: var(--gardient-background);
+}
+.pagination_item{
+  display:inline-flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  height: 4.4rem;
+  width:100%;
+  padding: 0;
+  font-size: 2rem;
+}

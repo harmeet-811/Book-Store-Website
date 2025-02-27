@@ -1,0 +1,73 @@
+
+.book-store img {
+    height: 350px;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    opacity: 0.5;
+  }
+
+  .book-store .text2 {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 95%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    opacity: 0.8;
+    margin-top: -180px;
+  }
+  .book-store .text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 70%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    opacity: 0.8;
+    margin-top: -90px;
+  
+  }
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    }
+    
+   
+
+    
+    .card img {
+      width: 880px;
+      height: auto;
+      margin-left: 100px;
+      margin-right: 100px;
+
+    }
+    
+    .content{
+      text-align: center;
+      text-align: justify;
+      margin-left: 300px;
+      margin-right: 350px;
+     letter-spacing:0.1em;
+      word-spacing:0.1em;
+
+    }
+
+   .btn1{
+    width: 700px;
+    height: 50px;
+    margin-left: 400px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+  
+   
+
+   }
+  
